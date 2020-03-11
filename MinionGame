@@ -1,0 +1,21 @@
+from nltk import everygrams
+
+word = str(input("Select a word to guess: ").upper())
+score_Kevin = 0
+score_Stuart = 0
+print("Welcome to Minion Game")
+
+for kevin_word in list(everygrams(word)):
+    if kevin_word[0].lower() in ("a", "e", "i", "o", "u"):
+        score_Kevin += 1
+for stuart_word in list(everygrams(word)):
+    if stuart_word[0].lower() in (
+    "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x",
+    "y", "z"):
+        score_Stuart += 1
+if score_Kevin > score_Stuart:
+    print(f"Kevin {score_Kevin}")
+elif score_Stuart > score_Kevin:
+    print(f"Stuart {score_Stuart}")
+else:
+    print("Draw")
