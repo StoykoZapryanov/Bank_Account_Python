@@ -24,7 +24,6 @@ country: List of country names to filter the opportunities (optional).
 GET /estimate_traffic?total_request_count=1000000&browser=Chrome&platform=Android&vertical=280000000000
 
 ## Example Response:
-
 {
     "estimated_traffic": 9918736
 }
