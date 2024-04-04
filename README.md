@@ -1,11 +1,3 @@
-
-### Traffic Estimation Process:
-By taking the minimum value among the filtered opportunities across different dimensions, we're essentially making a conservative estimate of traffic. This means we're assuming that the actual traffic generated will be limited by the dimension with the lowest opportunity count. It's a cautious approach that ensures we don't overestimate the traffic by considering only the most constrained dimension.
-
-While this method may provide a reasonable estimate under certain conditions, it's important to note that it's a simplification of a more complex process. The actual traffic generated may vary based on factors beyond the opportunities considered, such as user behavior, market dynamics, and external events.
-
-In summary, while the minimum value approach serves as a pragmatic way to estimate traffic based on available opportunities, it's essential to interpret the results with caution and consider other factors that may influence actual traffic levels.
-
 ### Project Name: Traffic Estimation API
 
 ## Description:
