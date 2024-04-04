@@ -6,7 +6,7 @@ While this method may provide a reasonable estimate under certain conditions, it
 
 In summary, while the minimum value approach serves as a pragmatic way to estimate traffic based on available opportunities, it's essential to interpret the results with caution and consider other factors that may influence actual traffic levels.
 
-### Project Name: Traffic Estimation API
+### Project Name: Traffic Estimation API ###
 
 ## Description:
 The Traffic Estimation API is designed to estimate web traffic based on opportunities associated with various dimensions such as countries, browsers, platforms, and verticals. It provides a simple HTTP API endpoint /estimate_traffic to receive request parameters and return estimated traffic counts.

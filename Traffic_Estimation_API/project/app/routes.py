@@ -5,10 +5,10 @@ from .data_processing import parse_csv_file
 main_bp = Blueprint('main', __name__)
 
 # Load data from CSV files
-country_data = parse_csv_file('./data/opportunities_country.csv', key_field_name='country', value_field_name='opps')
-browser_data = parse_csv_file('./data/opportunities_browser.csv', key_field_name='browsername', value_field_name='opps')
-platform_data = parse_csv_file('./data/opportunities_platform.csv', key_field_name='platformname', value_field_name='opps')
-vertical_data = parse_csv_file('./data/opportunities_vertical.csv', key_field_name='publishernewthematic', value_field_name='opps')
+country_data = parse_csv_file('project/data/opportunities_country.csv', key_field_name='country', value_field_name='opps')
+browser_data = parse_csv_file('project/data/opportunities_browser.csv', key_field_name='browsername', value_field_name='opps')
+platform_data = parse_csv_file('project/data/opportunities_platform.csv', key_field_name='platformname', value_field_name='opps')
+vertical_data = parse_csv_file('project/data/opportunities_vertical.csv', key_field_name='publishernewthematic', value_field_name='opps')
 
 # Precompute total opportunities
 total_opportunities = sum(country_data.values())
